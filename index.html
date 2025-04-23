@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sai Vignesh Chintala Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">f
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.fmin.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Sai vignesh chintala</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+						
+						<!-- Remove the right image div completely -->
+	
+						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Sai vignesh chintala</span></h1>
+	
+								<!-- Typing animation -->
+								<span id="typing-animation"></span>
+	
+								<script>
+								const typingAnimationElement = document.getElementById('typing-animation');
+								const typingTexts = ['Data Enthusiast '];
+								function playTypingAnimation(text) {
+									for (let i = 0; i < text.length; i++) {
+										setTimeout(() => {
+											typingAnimationElement.textContent += text[i];
+										}, i * 200);
+									}
+									setTimeout(() => {
+										typingAnimationElement.textContent = '';
+										playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+									}, text.length * 200);
+								}
+								playTypingAnimation(typingTexts[0]);
+								</script>
+	
+								<br><br>
+								<h2>Data Scientist/ Solving real world problems using mathematical tools and data</h2>
+								<a href="https://github.com/saivignesh-03" class="btn btn-white btn-outline-white py-3 px-4">Git Hub</a>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/saivigneshchintala.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Sai vignesh chintala</span></p>
+										<!--<p><span class="title-s">Previous Job Role: </span> <span>Data Scientist and Analyst</span></p>-->
+										<!--<p><span class="title-s">Experience: </span> <span>2+ Years</span></p>-->
+										<!--<p><span class="title-s">Tenure: </span> <span>February 05, 2022 – January 15, 2024</span></p>-->
+										<p><span class="title-s">Address: </span> <span>Buffalo, NewYork</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<p><strong>Data Analysis:</strong> Python, Pandas, NumPy, SciPy, Power BI, SQL, Excel, VBA, Spark, Hadoop, AWS, Apache Kafka, NetworkX</p>
+<p><strong>Data Science:</strong> Scikit-learn, TensorFlow, K-Nearest Neighbors (KNN), XGBoost, CatBoost, LSTMs, Transformers, MLflow, Kubeflow, Linear Algebra, Statistics, Probability Theory, R, MATLAB, Machine Learning, Numerical Methods, Autoencoders, SHAP</p>
+<p><strong>Web Development:</strong>HTML, CSS, JavaScript, React, Bootstrap, PHP, Flask, Django, FastAPI, Streamlit, Tableau, Plotly Dash</p>
+<p><strong>Cloud & Deployment:</strong>AWS Lambda, Databricks, MLOps, Docker, Airflow</p>
+<p><strong>Soft Skills:</strong> Time Management, Team Leadership, English Proficiency, Deal Closing Communication, Problem-Solving, Critical Thinking</p>
+<p><strong>Other Hard Skills:</strong>C, C++, Object-Oriented Programming, Calculus, Data Structures, Advanced Algorithms, Graph Theory, API Integration</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>As a Data Science professional with 3 years of experience, I have worked across fintech, healthcare, real-estate and consulting, specializing
+in machine learning, data analytics, and business intelligence. My expertise includes Python, R, SQL, MATLAB, AWS, GCP,
+Databricks, and data visualization (Power BI, Tableau). At TresVista, I automated financial data processes, built interactive
+dashboards, and conducted data-driven financial analysis. At ZS Associates, I applied machine learning, predictive modeling, and
+patient-level analytics to optimize drug sales forecasting and business strategies. As a Student Leader at SUNY Buffalo, I analyze
+financial data using Tableau. I am currently pursuing a Master’s in Data Science at SUNY Buffalo, building on my Bachelor’s in
+Computer Science from VIT. Passionate about leveraging data-driven insights, I thrive in solving complex business challenges.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Currently Pursuing:</span> <span>Engineering Science Data Science</span></li> 
+									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology (Artificial intelligence and Data Science)</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Telugu</span></li>
+									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
+									<li class="d-flex"><span>Interest:</span> <span> Travel Photography, Puzzle Solving, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="5">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/saivigneshchintala/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>I’m a Data Science graduate student at SUNY Buffalo with one year of hands-on analytics experience.
+My journey includes working on the Data Intelligence team at TresVista and gaining machine learning expertise at ZS Associates.
+		    
+I’m passionate about leveraging data-driven insights to bridge business goals and advanced solutions.
+	    </p>
+		
+	<p><a href="https://drive.google.com/file/d/1tUGUMjwboiJaggqyPtpyCdA9wsQ-X4MJ/view?usp=sharing">Resume-Link</a>	</p>
+          </div>
+        </div>
+<!--
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">02/22-08/23</span>
+						<h2>Data Intelligence Analyst</h2>
+						<span class="position">TresVista</span>
+						<p class="mt-4">TresVista is a global enterprise offering a diversified portfolio of services that enables its clients to achieve resource optimization through leveraging an offshore capacity model. TresVista's services include investment diligence, industry research, valuation, fund administration, accounting, and data analytics. TresVista has more than 1,800 employees across offices in North America, Europe, and Asia, providing high-caliber support and operating leverage to over 1,000 clients across geographies and asset classes, including asset managers, advisors, corporates, and entrepreneurs. 
+							<ul>
+								<li>Led end-to-end automation of data processes using VBA and Python, significantly improving the efficiency and accuracy of financial data integration into the database.
+								<li>Developed interactive PowerBI dashboards to support data-driven decision-making, providing clear visualizations of key financial metrics for cross-functional teams.</li>
+								<li>Collaborated with clients and internal teams to understand business requirements, developing tailored solutions that addressed changing needs and ensuring seamless project execution.</li>
+								<li>Created ad-hoc reports and presentations to deliver actionable insights, effectively communicating findings and recommendations to clients, management, and cross-functional stakeholders.
+								<li>Streamlined data cleaning and transformation workflows, converting raw data into valuable, actionable insights that informed business decisions and improved reporting accuracy.
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">08/23-01/24</span>
+						<h2>Decision Analytics Associate</h2>
+						<span class="position">ZS Associates</span>
+						<p class="mt-4">ZS is a management consulting and technology firm that partners with companies to improve life and how we live it. We transform ideas into impact by bringing together data, science, technology and human ingenuity to deliver better outcomes for all. Founded in 1983, ZS has more than 13,000 employees in over 35 offices worldwide.
+							<ul>
+								<li>Won Data Analytics boot camp conducted firm-wide.</li>
+								<li>Developed and applied advanced statistical and machine learning models to predict drug sales using patient-level data, optimizing client decision-making and improving sales forecasting accuracy</li>
+								<li>Designed Machine Learning models that help predict drug sales using patient-level data.</li>
+								<li>Collaborated with cross-functional teams to design and implement custom analyses in R, Tableau, and Excel, providing actionable insights to guide client strategies.</li>
+								<li>Led the creation and presentation of data-driven recommendations, synthesizing complex analyses into clear, compelling narratives for clients and internal stakeholders.</li>
+								<li>Managed client relationships and project timelines, ensuring successful delivery of high-impact solutions and regular project status updates.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div> 
+			</div>
+
+		<br>
+		<br>
+		-->
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2024-2025</span>
+    					<h2>Master in Engineering Science Data Science</h2>
+    					<span class="position">University at Buffalo</span>
+    					<p class="mt-4">Grade: 3.25/4.0</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2024</span>
+    					<h2>Bachelors of Technology - AI&DS</h2>
+    					<span class="position">Vasireddy venkatadri Institute of Technology (VVIT) </span>
+    					<p class="mt-4">Grade: 7.7/10</p>
+    				</div>
+				</div>
+    		</div>
+
+
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Here are some of my Machine Learning, AI, and Data Science projects.</p>
+			</div>
+		  </div>
+	  
+		  <div class="row d-flex">
+	  
+			<!-- Crowd Lens Project -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/project-1\ crowd\ anomaly.png">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="#">Crowd Lens: Anomaly Detection</a></h3>
+				  <p>Developed CNN and RNN models to detect anomalies with 95% accuracy. Redesigned data pipelines to improve throughput significantly.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Predictive Modelling for Obesity -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/project-2 obesity.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="#">Obesity Prediction using ML</a></h3>
+				  <p>Built predictive models to assess risks of overweight and obesity, using machine learning techniques and health data analysis.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- AI Answering Models Understanding -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/project-3 ai_conversation.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="#">Understanding AI Answering Models</a></h3>
+				  <p>Explored how AI answering systems interpret and respond to queries based on context, enhancing chatbot and conversational AI performance.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Melanoma Skin Cancer Detection -->
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/project-4 skin_cancer_detection.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="#">Melanoma Skin Cancer Detection</a></h3>
+				  <p>Applied deep learning to detect melanoma skin cancer with high precision, using CNN-based medical image classification techniques.</p>
+				</div>
+			  </div>
+			</div>
+	  
+		  </div>
+		</div>
+	  </section>
+
+	  
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		 <!---
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="" class="block-20 zoom-effect" style="background-image: url('images/fitness.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="">Fitness App</a></h3>
+				  <p>
+					Designed an Android application to take input from users about the food they consume and give calorie counts.
+Suggests workout plans and includes BMI calculator, with redirects to videos for exercises.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="" class="block-20 zoom-effect" style="background-image: url('images/air.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="">Website for Airline Reservation</a></h3>
+				  <p>Developed a website with full functionality for airline reservations, including customer login, flight selection,
+and payment gateway.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Certifications</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="15">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500000">0</strong>
+                <span>Caffine intake till-date (milligrams)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love applying mathematical insights, data exploration, and the power of data science to solve real business problems and uncover hidden data stories. </h4>
+						<br>
+						<p><a href="https://github.com/saivignesh-03" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Buffalo, New York</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+1 (716) 907-8100</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com"> chintalasaivignesh03@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1tUGUMjwboiJaggqyPtpyCdA9wsQ-X4MJ/view?usp=sharing">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLScBgrRgZKAQQ8UH-uOjauzijbM-7icyB6_cfhQXypjfG4DrAA/viewform?usp=dialog">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+						<li class="ftco-animate normal-txt">Find me on</li>
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/saivigneshchintala/"><span class="icon-linkedin"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.instagram.com/saivignesh_3/"><span class="icon-instagram"></span></a></li>
+						<li class="ftco-animate"><a href="https://github.com/saivignesh-03"><span class="icon-github"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	 This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by Sai vignesh chintala
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
